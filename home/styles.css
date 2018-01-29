@@ -42,6 +42,12 @@ a:hover {
 
 .logo {
     width: 300px;
-    border-radius: 25px;
 }
 
+.social {
+    position: absolute;
+    bottom: 10px;
+    width: 60px;
+    color: white;
+    color: hsl(0, 0%, 100%);
+}
