@@ -1,3 +1,47 @@
 html {
     font-family: 'Graduate', cursive;
+    background:
+    linear-gradient(
+	rgba(0, 0, 0, 0.7),
+	rgba(0, 0, 0, 0.7)
+    ), url("BG2.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+table {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 35px;
+    -webkit-transition: color ls;
+    transition: color ls;
+    text-shadow:
+    -2px -2px 0 #3c3c3c,
+    2px -2px 0 #3c3c3c,
+    -2px 2px 0 #3c3c3c,
+    2px 2px 0 #3c3c3c;
+    font-weight: 300;
+}
+
+a:hover {
+    color:rgb(208, 208, 208);
+}
+
+.logo {
+    width: 300px;
+    border-radius: 25px;
+}
+
