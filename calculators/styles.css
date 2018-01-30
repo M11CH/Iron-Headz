@@ -1,0 +1,66 @@
+html {
+    font-family: 'Graduate', cursive;
+    background:
+    linear-gradient(
+	rgba(0, 0, 0, 0.7),
+	rgba(0, 0, 0, 0.7)
+    ), url("BG.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+table {
+    position: absolute;
+    top: 1%;
+    width: 99%;
+}
+
+td {
+    text-align: center;
+    vertical-align: top;
+}
+
+a:link, a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 25px;
+    -webkit-transition: color ls;
+    transition: color ls;
+    text-shadow:
+    -2px -2px 0 #3c3c3c,
+    2px -2px 0 #3c3c3c,
+    -2px 2px 0 #3c3c3c,
+    2px 2px 0 #3c3c3c;
+    font-weight: 300;
+}
+
+a:hover {
+    color:rgb(208, 208, 208);
+}
+
+.logo {
+    width: 150px;
+    float: left;
+}
+
+a.selected:link, a.selected:visited {
+    color: #ff0000;    
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 25px;
+    -webkit-transition: color ls;
+    transition: color ls;
+    text-shadow:
+    -2px -2px 0 #282828,
+    2px -2px 0 #282828,
+    -2px 2px 0 #282828,
+    2px 2px 0 #282828;
+    font-weight: 300;
+}
+
+a.selected:hover {
+    color: #be0000
+}
