@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <!-- Links to different sites -->
     <center>
       <table class="links">
 	<tr>
@@ -19,6 +20,8 @@
 	</tr>
       </table>
     </center>
+    
+    <!-- Calculators -->
     <table class="options">
       <tr>
 	<td><a href="index.htm">DAILY CALORIE INTAKE</a></td>
@@ -33,6 +36,8 @@
 	<td><a href="index.htm">BODY TYPE</a></td>
       </tr>
     </table>
+
+    <!-- Content of curent page -->
     <div class="content">
       <h1>DAILY CALORIE INTAKE</h1>
       <p>Your daily calorie intake is the amount of calories your body requires to maintain its normal
@@ -43,6 +48,24 @@
 	based on your fitness goal.
 	<br><br>
 	Calculate your calorie intake:</p>
+      
+      <table class="calculator">
+	<form>
+	  <tr>
+	    <td><div class="radios">
+		<input type="radio" id="male" name="gender" value="male" checked>
+	      <label for="male">Male</label></div></td>
+	    <td><div class="radios"><input type="radio" id="female" name="gender" value="female">
+	      <label for="female">Female</label></div></td>
+	    
+	  <tr>
+	    <td><label for="age">Age</label></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><input name="age" type="text" placeholder="Years"></td>
+	  </tr>
+	</form>
+      </table>
       
       <p> Although this calculator is a great tool, it's not perfect. Keep in mind this is just an estimate.
 	Furthermore, many of us overestimate, underestimate, or flat-out lie about how much we weigh or
