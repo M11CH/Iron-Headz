@@ -118,3 +118,36 @@ h1 {
     2px 2px 0 #3c3c3c;
     font-weight: 300;
 }
+
+table.calculator{
+    width: 50%;
+    margin-left: 25%;
+}
+
+input[type=text] {
+    width: 96%;
+    padding: 12px;
+    border: 2px solid #3c3c3c;
+    border-radius: 4px;
+}
+
+input[type=text]:focus {
+    border: 2px solid #ff0000;
+}
+
+.content .radios input[type="radio"] {
+  display: none;
+}
+
+.content .radios label {
+  width: 95%;
+  display: inline-block;
+  border: 2px solid #3c3c3c;
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.content .radios input[type="radio"]:checked+label {
+  border: 2px solid #ff0000; 
+}
