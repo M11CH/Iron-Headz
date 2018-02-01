@@ -120,13 +120,20 @@ h1 {
 }
 
 table.calculator{
+    border: solid #3c3c3c;
+    border-radius: 5px;
+    padding: 10px;
     width: 50%;
     margin-left: 25%;
 }
 
 input[type=text] {
-    width: 96%;
-    padding: 12px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    background-color: #707070;
+    color: white;
+    width: 97%;
+    padding: 8px;
     border: 2px solid #3c3c3c;
     border-radius: 4px;
 }
@@ -135,19 +142,43 @@ input[type=text]:focus {
     border: 2px solid #ff0000;
 }
 
+.doubles input[type=text] {
+    width: 93%;
+}
+
 .content .radios input[type="radio"] {
   display: none;
 }
 
 .content .radios label {
-  width: 95%;
-  display: inline-block;
-  border: 2px solid #3c3c3c;
-  border-radius: 4px;
-  padding: 5px;
-  cursor: pointer;
+    text-align: center;  
+    width: 95%;
+    display: inline-block;
+    border: 2px solid #3c3c3c;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .content .radios input[type="radio"]:checked+label {
   border: 2px solid #ff0000; 
+}
+
+.button {
+    width: 100%;
+    background-color: #707070;
+    border: 2px solid #3c3c3c;
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 2px solid #ff0000;
 }

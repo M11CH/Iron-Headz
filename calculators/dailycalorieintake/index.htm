@@ -47,22 +47,70 @@
 	each day. With this number, you are able to determine how many calories you should be consuming
 	based on your fitness goal.
 	<br><br>
-	Calculate your calorie intake:</p>
-      
+      </p>
       <table class="calculator">
+	<th colspan="2">Calculate your calorie intake:</th>
 	<form>
+	  <!-- SEX -->
 	  <tr>
 	    <td><div class="radios">
 		<input type="radio" id="male" name="gender" value="male" checked>
-	      <label for="male">Male</label></div></td>
+		<label for="male">Male</label></div></td>
 	    <td><div class="radios"><input type="radio" id="female" name="gender" value="female">
-	      <label for="female">Female</label></div></td>
-	    
+		<label for="female">Female</label></div></td>
+	  </tr>
+	  <!-- AGE -->
 	  <tr>
 	    <td><label for="age">Age</label></td>
 	  </tr>
 	  <tr>
 	    <td colspan="2"><input name="age" type="text" placeholder="Years"></td>
+	  </tr>
+	  <!-- HEIGHT -->
+	  <tr>
+	    <td><label for="heightft">Height</label></td>
+	  </tr>
+	  <tr>
+	    <td><div class="doubles"><input name="heightft" type="text" placeholder="Feet"></div></td>
+	    <td><div class="doubles"><input name="heightin" type="text" placeholder="Inches"></div></td>
+	  </tr>
+	  <!-- WEIGHT -->
+	  <tr>
+	    <td><label for="weight">Weight</label></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><input name="weight" type="text" placeholder="Pounds"></td>
+	  </tr>
+	  <!-- ACTIVITY LEVEL -->
+	  <tr>
+	    <td><label>Activity level</label></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><div class="radios">
+		<input type="radio" id="minimal" name="activity" value="minimal" checked>
+		<label for="minimal">Minimal - moderate excercise / sit-down job</label></div></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><div class="radios">
+		<input type="radio" id="average" name="activity" value="average">
+		<label for="average">Average - break a sweat / sit-down job</label></div></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><div class="radios">
+		<input type="radio" id="very" name="activity" value="very">
+		<label for="very">Very - moderate excercise / active job</label></div></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><div class="radios">
+		<input type="radio" id="ott" name="activity" value="ott">
+		<label for="ott">OTT - leave the gym crawling / on your feet job</label></div></td>
+	  </tr>
+	  <tr>
+	  </tr>
+	  <!-- BUTTONS -->
+	  <tr>
+	    <td><input type="button" class="button" value="Submit"></td>
+	    <td><input type="button" class="button" value="Clear form"></td>
 	  </tr>
 	</form>
       </table>
