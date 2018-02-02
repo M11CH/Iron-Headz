@@ -49,7 +49,7 @@
 	based on your fitness goal.
 	<br><br>
       </p>
-      <table class="calculator">
+      <table class="calculatortab" id="calculatortab">
 	<th colspan="2">Calculate your calorie intake:</th>
 	<form id="calculator">
 	  <!-- SEX -->
@@ -110,7 +110,7 @@
 	  </tr>
 	  <!-- BUTTONS -->
 	  <tr>
-	    <td><input type="button" class="button" value="Submit"></td>
+	    <td><input type="button" class="button" id="submitbutt" onclick="displayresult()" value="Submit"></td>
 	    <td><input type="button" class="button" onclick="clearform()" value="Clear form"></td>
 	  </tr>
 	</form>
