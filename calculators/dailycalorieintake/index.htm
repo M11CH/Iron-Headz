@@ -4,7 +4,8 @@
     <title>Iron Headz</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Graduate" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <script src="functions.js"></script>
   </head>
 
   <body>
@@ -50,7 +51,7 @@
       </p>
       <table class="calculator">
 	<th colspan="2">Calculate your calorie intake:</th>
-	<form>
+	<form id="calculator">
 	  <!-- SEX -->
 	  <tr>
 	    <td><div class="radios">
@@ -110,7 +111,7 @@
 	  <!-- BUTTONS -->
 	  <tr>
 	    <td><input type="button" class="button" value="Submit"></td>
-	    <td><input type="button" class="button" value="Clear form"></td>
+	    <td><input type="button" class="button" onclick="clearform()" value="Clear form"></td>
 	  </tr>
 	</form>
       </table>
