@@ -14,6 +14,8 @@ function clearform() {
 
 function displayresult() {
     // get values from form
+
+    // gender
     var genders = document.getElementsByName("gender");
     var gender;
     for(var i = 0; i < genders.length; i++){
@@ -21,7 +23,14 @@ function displayresult() {
 	    gender = genders[i].value;
 	}
     }
-
+    // age
+    var age = document.getElementById("age").value;
+    // height
+    var feet = document.getElementById("feet").value;
+    var inches = document.getElementById("inches").value;
+    // weight
+    var pounds = document.getElementById("pounds").value;
+    // activity level
     var activities = document.getElementsByName("activity");
     var activity;
     for(var i = 0; i < activities.length; i++){
@@ -31,6 +40,10 @@ function displayresult() {
     }
     
     console.log(gender);
+    console.log(age);
+    console.log(feet);
+    console.log(inches);
+    console.log(pounds);
     console.log(activity);
     
     // display calculation result
