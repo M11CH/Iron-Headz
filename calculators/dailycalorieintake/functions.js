@@ -14,7 +14,6 @@ function clearform() {
 
 function displayresult() {
     // get values from form
-
     // gender
     var genders = document.getElementsByName("gender");
     var gender;
@@ -39,18 +38,44 @@ function displayresult() {
 	}
     }
     
-    console.log(gender);
-    console.log(age);
-    console.log(feet);
-    console.log(inches);
-    console.log(pounds);
-    console.log(activity);
+    // calculate result
+    var gendersum;
+    if (gender == "male"){
+	gendersum = 5;
+    } else if (gender == "female") {
+	gendersum = -161;
+    }
+
+    var activitysum;
+        if (activity == "minimal"){
+	activitysum = 1.2;
+    } else if (activity == "average") {
+	activitysum = 1.55;
+    } else if (activity == "very") {
+	activitysum = 1.725;
+    } else if (activity == "ott") {
+	activitysum = 1.9;
+    }
+
+    var weight = pounds / 2.2
+    var height = ((parseInt(feet) * 12) + parseInt(inches)) * 2.54
+
+    var total = (10 * parseInt(weight)) //+ (6.25 * parseInt(height)) -
+		 //(5 * parseInt(age)) + parseInt(gendersum)) * parseInt(activitysum)
+
+    console.log(total);
+
+    // console.log(weight);
+    // console.log(height);
+    // console.log(age);
+    // console.log(gendersum);
+    // console.log(activitysum);
     
     // display calculation result
     var table = document.getElementById("calculatortab");
     var row = table.insertRow(-1);
     var cell = row.insertCell(0);
-    cell.innerHTML = "RESULT";
+    cell.innerHTML = "RESULT:" + total;
 
     // disable submit button
     document.getElementById("submitbutt").disabled=true;
