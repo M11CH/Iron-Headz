@@ -118,6 +118,14 @@ h1 {
     font-weight: 300;
 }
 
+.bottle {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(7deg);
+}
+
 table.calculatortab{
     border: solid #3c3c3c;
     border-radius: 5px;
@@ -131,7 +139,7 @@ input[type=text] {
     font-size: 20px;
     background-color: #707070;
     color: white;
-    width: 97%;
+    width: 95%;
     padding: 8px;
     border: 2px solid #3c3c3c;
     border-radius: 4px;
@@ -151,7 +159,7 @@ input[type=text]:focus {
 
 .content .radios label {
     text-align: center;  
-    width: 95%;
+    width: 93%;
     display: inline-block;
     border: 2px solid #3c3c3c;
     border-radius: 4px;
@@ -168,7 +176,7 @@ input[type=text]:focus {
 }
 
 .button {
-    width: 99%;
+    width: 100.5%;
     background-color: #707070;
     border: 2px solid #3c3c3c;
     border-radius: 4px;

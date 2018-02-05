@@ -41,6 +41,40 @@
     <!-- Content of curent page -->
     <div class="content">
       <h1>WATER INTAKE</h1>
+      <table class="calculatortab" id="calculatortab">
+	<th colspan="4">Calculate your water intake:</th>
+	<form id="calculator">
+	  <tr>
+	    <td colspan="2"><label for="weight">Weight</label></td>
+	    <td colspan="2" rowspan="6"><img class="bottle" src="water-bottle.png"></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><input name="weight" id="weight" type="text" placeholder="Pounds"></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><label for="activity">Daily excercise amount</label></td>
+	  </tr>
+	  <tr>
+	    <td><div class="radios">
+		<input type="radio" id="0" name="activity" value="0" checked="checked">
+		<label for="0">0 mins</label></div></td>
+	    <td><div class="radios">
+		<input type="radio" id="30" name="activity" value="30">
+		<label for="30">30 mins</label></div></td>
+	  </tr>
+	  <tr>
+	    <td><div class="radios">
+		<input type="radio" id="60" name="activity" value="60">
+		<label for="60">60 mins</label></div></td>
+	    <td><div class="radios">
+		<input type="radio" id="120" name="activity" value="120">
+		<label for="120">120 mins</label></div></td>
+	  </tr>
+	  <tr>
+	    <td colspan="2"><input type="button" class="button" id="submitbutt" onclick="" value="Calculate"></td>
+	  </tr>
+	</form>
+      </table>
     </div>
     
   </body>
