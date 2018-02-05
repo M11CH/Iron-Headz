@@ -1,0 +1,194 @@
+html {
+    font-family: 'Graduate', cursive;
+    background:
+    linear-gradient(
+	rgba(0, 0, 0, 0.7),
+	rgba(0, 0, 0, 0.7)
+    ), url("BG.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+table.links {
+    position: absolute;
+    top: 1%;
+    width: 99%;
+}
+
+table.options {
+    position: absolute;
+    top: 25%;
+}
+
+table.links td {
+    text-align: center;
+    vertical-align: top;
+}
+
+table.options td {
+    text-align: left;
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+table.links a:link, a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 35px;
+    -webkit-transition: color ls;
+    transition: color ls;
+    text-shadow:
+    -2px -2px 0 #3c3c3c,
+    2px -2px 0 #3c3c3c,
+    -2px 2px 0 #3c3c3c,
+    2px 2px 0 #3c3c3c;
+    font-weight: 300;
+}
+
+table.links a:hover {
+    color:rgb(208, 208, 208);
+}
+
+table.links a.currentpage:link, a.currentpage:visited {
+    color: #ff0000;    
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 45px;
+    -webkit-transition: color ls;
+    transition: color ls;
+    text-shadow:
+    -2px -2px 0 #282828,
+    2px -2px 0 #282828,
+    -2px 2px 0 #282828,
+    2px 2px 0 #282828;
+    font-weight: 300;
+}
+
+table.links a.currentpage:hover {
+    color: #be0000
+}
+
+table.options a:link, a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 20px;
+    -webkit-transition: color ls;
+    transition: color ls;
+    text-shadow:
+    -2px -2px 0 #3c3c3c,
+    2px -2px 0 #3c3c3c,
+    -2px 2px 0 #3c3c3c,
+    2px 2px 0 #3c3c3c;
+    font-weight: 300;
+}
+
+table.options a:hover {
+    color:rgb(208, 208, 208);
+}
+
+.logo {
+    width: 150px;
+    float: left;
+}
+
+.content {
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    color: white;
+    padding-top: 5%;
+    padding-left: 350px;
+    margin-right: 50px;
+}
+
+h1 {
+    font-size: 40px;
+    background-color: transparent;
+    -webkit-transition: color ls;
+    transition: color ls;
+    text-shadow:
+    -2px -2px 0 #3c3c3c,
+    2px -2px 0 #3c3c3c,
+    -2px 2px 0 #3c3c3c,
+    2px 2px 0 #3c3c3c;
+    font-weight: 300;
+}
+
+table.calculatortab{
+    border: solid #3c3c3c;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+input[type=text] {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    background-color: #707070;
+    color: white;
+    width: 97%;
+    padding: 8px;
+    border: 2px solid #3c3c3c;
+    border-radius: 4px;
+}
+
+input[type=text]:focus {
+    border: 2px solid #ff0000;
+}
+
+.doubles input[type=text] {
+    width: 93%;
+}
+
+.content .radios input[type="radio"] {
+  display: none;
+}
+
+.content .radios label {
+    text-align: center;  
+    width: 95%;
+    display: inline-block;
+    border: 2px solid #3c3c3c;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.content .radios label:hover {
+    border: 2px solid #ff0000;  
+}
+
+.content .radios input[type="radio"]:checked+label {
+  border: 2px solid #ff0000; 
+}
+
+.button {
+    width: 99%;
+    background-color: #707070;
+    border: 2px solid #3c3c3c;
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 2px solid #ff0000;
+}
+
+.result {
+    text-align: center;
+    color: #ff0000;
+    font-size: 40px;
+    padding-top: 15px;
+}
