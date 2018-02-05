@@ -50,11 +50,11 @@ function displayresult() {
         if (activity == "minimal"){
 	activitysum = 1.2;
     } else if (activity == "average") {
-	activitysum = 1.55;
+	activitysum = 1.4;
     } else if (activity == "very") {
-	activitysum = 1.725;
+	activitysum = 1.625;
     } else if (activity == "ott") {
-	activitysum = 1.9;
+	activitysum = 1.8;
     }
 
     var weight = pounds / 2.2
@@ -67,7 +67,9 @@ function displayresult() {
     var table = document.getElementById("calculatortab");
     var row = table.insertRow(-1);
     var cell = row.insertCell(0);
-    cell.innerHTML = "RESULT:" + total.toFixed(0);
+    cell.className = "result";
+    cell.colSpan = 2
+    cell.innerHTML = "RESULT: " + total.toFixed(0) + " calories";
 
     // disable submit button
     document.getElementById("submitbutt").disabled=true;
