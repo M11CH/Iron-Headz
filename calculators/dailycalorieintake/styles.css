@@ -100,8 +100,7 @@ table.options a:hover {
     font-size: 25px;
     text-align: justify;
     color: white;
-    position: absolute;
-    top: 15%;
+    padding-top: 5%;
     padding-left: 350px;
     margin-right: 50px;
 }
