@@ -58,24 +58,16 @@ function displayresult() {
     }
 
     var weight = pounds / 2.2
-    var height = ((parseInt(feet) * 12) + parseInt(inches)) * 2.54
+    var height = ((parseFloat(feet) * 12) + parseFloat(inches)) * 2.54
 
-    var total = (10 * parseInt(weight)) //+ (6.25 * parseInt(height)) -
-		 //(5 * parseInt(age)) + parseInt(gendersum)) * parseInt(activitysum)
+    var total = ((10 * parseFloat(weight)) + (6.25 * parseFloat(height)) -
+		 (5 * parseFloat(age)) + parseFloat(gendersum)) * parseFloat(activitysum)
 
-    console.log(total);
-
-    // console.log(weight);
-    // console.log(height);
-    // console.log(age);
-    // console.log(gendersum);
-    // console.log(activitysum);
-    
     // display calculation result
     var table = document.getElementById("calculatortab");
     var row = table.insertRow(-1);
     var cell = row.insertCell(0);
-    cell.innerHTML = "RESULT:" + total;
+    cell.innerHTML = "RESULT:" + total.toFixed(0);
 
     // disable submit button
     document.getElementById("submitbutt").disabled=true;
