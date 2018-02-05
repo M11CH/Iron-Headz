@@ -46,5 +46,7 @@ a:hover {
 
 .social {
     width: 60px;
-    padding-top: 415px;
+    position: fixed;
+    left: 957px;
+    bottom: 10px;
 }
