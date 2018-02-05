@@ -186,3 +186,10 @@ input[type=text]:focus {
 .button:hover {
     border: 2px solid #ff0000;
 }
+
+.result {
+    text-align: center;
+    color: #ff0000;
+    font-size: 40px;
+    padding-top: 15px;
+}
